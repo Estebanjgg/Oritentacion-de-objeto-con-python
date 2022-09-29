@@ -1,15 +1,6 @@
-def cria_conta(numero, titular, saldo, limite):
-    conta = {"numero": numero, "titular": titular, "saldo": saldo, "limite": limite}
-    return conta
 
-def deposita(conta, valor):
-    conta["saldo"] += valor
-    
-
-def saca(conta, valor):
-    conta["saldo"] -= valor
-    
-
-def extrato(conta):
-    print("Saldo e {}".format(conta["saldo"]))
-   
+url = "https://www.alura.com.br/curso?curso=python"
+indice_curso = url.find("curso")
+indice_valor = indice_curso + len("curso") + 1
+valor = url[indice_valor:]
+print(valor)
